@@ -14,7 +14,11 @@
             <?php foreach ($data['lagu'] as $key => $lagu): ?>
                 <tr>
                     <th scope="row"><?= $key + 1; ?></th>
-                    <td><?= $lagu['judul']; ?></td>
+                    <td>
+                        <a href="<?= BASEURL; ?>/lagu/detail/<?= $key + 1 ?>" class="text-decoration-none text-dark">
+                            <?= $lagu['judul']; ?>
+                        </a>
+                    </td>
                     <td><?= $lagu['penyanyi']; ?></td>
                     <td><?= $lagu['album']; ?></td>
                     <td><?= $lagu['durasi_menit']; ?>:<?= sprintf("%02d", $lagu['durasi_detik']); ?></td>

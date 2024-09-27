@@ -6,7 +6,7 @@ class Lagu_model
             "judul" => "Dia Masa Lalumu, Aku Masa Depanmu",
             "penyanyi" => "Vionita",
             "album" => "Dia Masa Lalumu, Aku Masa Depanmu",
-            "release" => "2021-03-05",
+            "rilis" => "2021-03-05",
             "durasi_menit" => 4,
             "durasi_detik" => 2,
         ],
@@ -14,7 +14,7 @@ class Lagu_model
             "judul" => "May I Love You?",
             "penyanyi" => "UMJI",
             "album" => "Lovely Runner, Pt. 4 (Original Soundtrack)",
-            "release" => "2024-04-23",
+            "rilis" => "2024-04-23",
             "durasi_menit" => 3,
             "durasi_detik" => 18
         ],
@@ -22,7 +22,7 @@ class Lagu_model
             "judul" => "Sudden Shower",
             "penyanyi" => "ECLIPSE",
             "album" => "Lovely Runner, Pt. 1 (Original Soundtrack)",
-            "release" => "2024-04-08",
+            "rilis" => "2024-04-08",
             "durasi_menit" => 3,
             "durasi_detik" => 53
         ],
@@ -30,7 +30,7 @@ class Lagu_model
             "judul" => "Shiny Star (2020)",
             "penyanyi" => "KyoungSeo",
             "album" => "Shiny Star (2020)",
-            "release" => "2020-11-14",
+            "rilis" => "2020-11-14",
             "durasi_menit" => 3,
             "durasi_detik" => 37
         ],
@@ -38,7 +38,7 @@ class Lagu_model
             "judul" => "Niscaya",
             "penyanyi" => "Bilal Indrajaya",
             "album" => "Niscaya",
-            "release" => "2021-8-25",
+            "rilis" => "2021-8-25",
             "durasi_menit" => 4,
             "durasi_detik" => 58
         ]
@@ -46,5 +46,9 @@ class Lagu_model
     public function getAllLagu()
     {
         return $this->song;
+    }
+    public function getLaguById($id)
+    {
+        return $this->song[$id - 1];
     }
 }
