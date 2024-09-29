@@ -18,7 +18,7 @@
         <div class="row g-2">
             <?php foreach ($data['album'] as $album): ?>
                 <div class="col-md-3 text-center">
-                    <a href="<?= BASEURL; ?>/album/<?= $album['id'] ?>">
+                    <a href="<?= BASEURL; ?>/album/detail/<?= $album['id'] ?>">
                         <div class="card h-100">
                             <div class="card-body d-flex align-items-center justify-content-center">
                                 <h5 class="card-title"><?= $album['nama']; ?></h5>
